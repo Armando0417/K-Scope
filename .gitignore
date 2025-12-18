@@ -1,0 +1,34 @@
+# --- Node / JavaScript Dependencies ---
+node_modules/
+npm-debug.log
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- SvelteKit / Build Output ---
+.svelte-kit/
+build/
+dist/
+
+# --- Rust / Tauri Dependencies & Build ---
+src-tauri/target/
+src-tauri/Cargo.lock  # Optional: Some people push this, some don't. For apps, usually YES.
+target/
+
+# --- Database (CRITICAL) ---
+# You do NOT want to push your personal shortcuts or binary DB files
+*.db
+*.db-shm
+*.db-wal
+kscope.db
+
+# --- OS / IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Environment Secrets ---
+.env
+.env.*
+!.env.example
